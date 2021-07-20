@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    style="@style/loginParent"
+    tools:context="com.mythri.reclancer_app.Freelancer.RResult">
+    <ScrollView
+        style="@style/parent">
+
+        <RelativeLayout
+            style="@style/parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:weightSum="12">
+
+                <LinearLayout
+                    style="@style/parent"
+                    android:background="@drawable/login_shape_bk"
+                    android:orientation="vertical"
+                    android:layout_weight="3">
+
+                    <ImageView
+                        style="@style/parent"
+                        android:background="@drawable/ic_login_bk"
+                        android:contentDescription="login background" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/headerText"
+                    android:layout_gravity="center"
+                    android:text="Job Search" />
+
+                <android.support.v7.widget.CardView
+                    style="@style/loginCard"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/whiteCardColor"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="@dimen/loginCardRadius">
+
+                    <LinearLayout
+                        style="@style/linearParent"
+                        android:layout_gravity="center">
+
+                        <android.support.design.widget.TextInputLayout style="@style/parent">
+
+                            <SearchView
+                                style="@style/modifiedEditText"
+                                android:padding="5dp" />
+
+                            <!--<EditText-->
+                            <!--style="@style/modifiedEditText"-->
+                            <!--android:hint="Job Title*"-->
+                            <!--android:inputType="text"-->
+                            <!--android:maxLines="1" />-->
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <FrameLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+            <LinearLayout android:id="@+id/layout_to_hide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               >
+                <android.support.v7.widget.CardView
+                    style="@style/loginCard"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:id="@+id/cardview"
+                    android:background="@color/whiteCardColor"
+                    android:elevation="5dp"
+
+                    app:cardCornerRadius="@dimen/loginCardRadius">
+
+                    <LinearLayout
+                        style="@style/linearParent"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/loginViewsMargin">
+
+                        <TextView
+                            style="@style/SearchText"
+                            android:layout_gravity="center"
+
+                            android:text="Advanced Search"></TextView>
+
+                        <TextView
+                            style="@style/SearchApplied"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="- One" />
+                        <TextView
+                            style="@style/SearchApplied"
+                            android:layout_gravity="center"
+                            android:text="- Two" />
+                        <TextView
+                            style="@style/SearchApplied"
+                            android:layout_gravity="center"
+                            android:text="- Three" />
+                        <TextView
+                            style="@style/SearchApplied"
+                            android:layout_gravity="center"
+                            android:text="- Four" />
+                        <TextView
+                            style="@style/SearchApplied"
+                            android:layout_gravity="center"
+                            android:text="- Five" />
+
+                        <Button
+                            android:id="@+id/but"
+                            style="@style/loginButton"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="APPLY" />
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+                </FrameLayout>
+
+                <android.support.v7.widget.CardView
+                    style="@style/loginCard"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:background="@color/whiteCardColor"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="@dimen/loginCardRadius">
+
+                    <LinearLayout
+                        style="@style/linearParent"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/loginViewsMargin">
+                        <TextView
+                            style="@style/SearchText"
+                            android:layout_gravity="center"
+                            android:text=".Net Development"
+                            android:background="@drawable/bg_result_next"/>
+
+                        <TextView
+                            style="@style/SearchApplied"
+                            android:layout_gravity="center"
+                            android:text="3 Applied" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="43dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+
+                                android:background="@drawable/bg_applieddetails"
+                                android:text="Bangalore"
+                                android:textSize="10sp" />
+
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_appliedexp"
+                                android:text="5 years"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    style="@style/loginCard"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+
+                    android:background="@color/whiteCardColor"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="@dimen/loginCardRadius">
+
+                    <LinearLayout
+                        style="@style/linearParent"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/loginViewsMargin">
+                        <TextView
+                            style="@style/SearchText"
+                            android:layout_gravity="center"
+                            android:text="C++ Development"
+                            android:background="@drawable/bg_result_next"/>
+
+                        <TextView
+                            style="@style/SearchApplied"
+                            android:layout_gravity="center"
+                            android:text="3 Applied" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="43dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+
+                                android:background="@drawable/bg_applieddetails"
+                                android:text="Bangalore"
+                                android:textSize="10sp" />
+
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_appliedexp"
+                                android:text="5 years"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    style="@style/loginCard"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+
+                    android:background="@color/whiteCardColor"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="@dimen/loginCardRadius">
+
+                    <LinearLayout
+                        style="@style/linearParent"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/loginViewsMargin">
+                        <TextView
+                            style="@style/SearchText"
+                            android:layout_gravity="center"
+                            android:text="Java Development"
+                            android:background="@drawable/bg_result_next"/>
+
+                        <TextView
+                            style="@style/SearchApplied"
+                            android:layout_gravity="center"
+                            android:text="3 Applied" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="43dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+
+                                android:background="@drawable/bg_applieddetails"
+                                android:text="Bangalore"
+                                android:textSize="10sp" />
+
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_appliedexp"
+                                android:text="5 years"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    style="@style/loginCard"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+
+                    android:background="@color/whiteCardColor"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="@dimen/loginCardRadius">
+
+                    <LinearLayout
+                        style="@style/linearParent"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/loginViewsMargin">
+                        <TextView
+                            style="@style/SearchText"
+                            android:layout_gravity="center"
+                            android:text="Node Development"
+                            android:background="@drawable/bg_result_next"/>
+
+                        <TextView
+                            style="@style/SearchApplied"
+                            android:layout_gravity="center"
+                            android:text="3 Applied" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="43dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+
+                                android:background="@drawable/bg_applieddetails"
+                                android:text="Bangalore"
+                                android:textSize="10sp" />
+
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_appliedexp"
+                                android:text="5 years"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+
+                android:src="@android:drawable/ic_dialog_dialer" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="370dp"
+                android:layout_marginTop="21dp"
+                android:id="@+id/myImageId"
+                android:layout_marginRight="-10dp"
+                android:src="@android:drawable/ic_menu_sort_by_size" />
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
+
+

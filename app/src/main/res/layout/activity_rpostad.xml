@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    style="@style/loginParent"
+    tools:context="com.mythri.reclancer_app.Recruiter.RPostAd">
+
+    <ScrollView style="@style/parent">
+
+        <RelativeLayout style="@style/parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:weightSum="12">
+
+                <LinearLayout
+                    style="@style/parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/login_shape_bk"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/parent"
+                        android:background="@drawable/ic_login_bk"
+                        android:contentDescription="login background" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/headerText"
+                    android:layout_gravity="center"
+                    android:text="Recruiter Postad" />
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    style="@style/loginCard"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:layout_marginBottom="@dimen/loginViewsMargin"
+                    android:background="@color/whiteCardColor"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="@dimen/loginCardRadius">
+
+                    <LinearLayout
+                        style="@style/linearParent"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/loginViewsMargin">
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/parent"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+
+                            <EditText
+                                android:id="@+id/jtitle"
+                                style="@style/modifiedEditText"
+                                android:hint="Enter Job Title*"
+                                android:inputType="text"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/parent"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+                            <EditText
+                                android:id="@+id/name"
+                                style="@style/modifiedEditText"
+                                android:hint="Enter Name*"
+                                android:inputType="text"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/parent"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+                            <EditText
+                                android:id="@+id/mobile"
+                                style="@style/modifiedEditText1"
+                                android:hint="Enter Contact*"
+                                android:inputType="text"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/parent"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+                            <EditText
+                                android:id="@+id/email"
+                                style="@style/modifiedEditText"
+                                android:hint="Enter Email*"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/state"
+                            style="@style/parent"
+                            android:layout_height="64dp"
+                            android:layout_marginTop="@dimen/signup_text_margin_top"
+                            android:background="@drawable/bg_dropdown"
+                            android:prompt="@string/state_prompt"
+                            android:textAlignment="viewStart"
+                            android:theme="@style/spinnerText">
+
+                        </android.support.v7.widget.AppCompatSpinner>
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/city"
+                            style="@style/parent"
+                            android:layout_height="64dp"
+                            android:layout_marginTop="@dimen/signup_text_margin_top"
+                            android:background="@drawable/bg_dropdown"
+                            android:prompt="@string/city_prompt"
+                            android:textAlignment="viewStart"
+                            android:theme="@style/spinnerText">
+
+                        </android.support.v7.widget.AppCompatSpinner>
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/category"
+                            style="@style/parent"
+                            android:layout_height="64dp"
+                            android:layout_marginTop="@dimen/signup_text_margin_top"
+                            android:background="@drawable/bg_dropdown"
+                            android:prompt="@string/cat_prompt"
+
+
+                            android:textAlignment="viewStart"
+                            android:theme="@style/spinnerText">
+
+                        </android.support.v7.widget.AppCompatSpinner>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/t_cat"
+                            style="@style/parent"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                            <EditText
+                                android:id="@+id/newcat"
+                                style="@style/modifiedEditText"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/parent"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                            <EditText
+                                android:id="@+id/subcat"
+                                style="@style/modifiedEditText"
+                                android:hint="Enter Subcategory"
+
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/parent"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                            <EditText
+                                android:id="@+id/pskills"
+                                style="@style/modifiedEditText"
+                                android:hint="Enter Primary Skills*"
+
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/parent"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                            <EditText
+                                android:id="@+id/exp"
+                                style="@style/modifiedEditText"
+                                android:hint="Enter Experience in Years*"
+
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/parent"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                            <EditText
+                                android:id="@+id/sskills"
+                                style="@style/modifiedEditText"
+                                android:hint="Enter Secondary Skills"
+
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/parent"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                            <EditText
+                                android:id="@+id/address"
+                                style="@style/modifiedEditText"
+                                android:hint="Enter Address*"
+
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/parent"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                            <EditText
+                                android:id="@+id/pperiod"
+                                style="@style/modifiedEditText1"
+                                android:hint="Enter Project Period in Months"
+                                android:inputType="text"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/parent"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                            <EditText
+                                android:id="@+id/prates"
+                                style="@style/modifiedEditText1"
+                                android:hint="Enter Project Rates /hour"
+                                android:inputType="text"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <Button
+                            style="@style/modifiedEditText"
+                            android:id="@+id/sdate"
+                            android:hint="Enter Start Date*"
+                            android:clickable="true"
+                            android:layout_marginTop="@dimen/signup_text_margin_top"
+                            android:maxLines="1"
+                            android:gravity="left|center_vertical"
+                            android:background="@drawable/bg_calendar"/>
+
+
+                        <Button
+                            style="@style/modifiedEditText"
+                            android:id="@+id/edate"
+                            android:hint="Enter End Date*"
+                            android:clickable="true"
+                            android:layout_marginTop="@dimen/signup_text_margin_top"
+                            android:maxLines="1"
+                            android:gravity="left|center_vertical"
+                            android:background="@drawable/bg_calendar"/>
+
+
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/worktype"
+                            style="@style/parent"
+                            android:layout_height="64dp"
+                            android:layout_marginTop="@dimen/signup_text_margin_top"
+                            android:background="@drawable/bg_dropdown"
+                            android:prompt="@string/work_type"
+
+
+                            android:textAlignment="viewStart"
+                            android:theme="@style/spinnerText">
+
+                        </android.support.v7.widget.AppCompatSpinner>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/parent"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                            <EditText
+                                android:id="@+id/des"
+                                style="@style/modifiedEditText"
+                                android:gravity="top|left"
+                                android:inputType="textMultiLine"
+                                android:overScrollMode="always"
+                                android:scrollbarStyle="insideInset"
+                                android:scrollbars="vertical"
+                                android:lines="6"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:scrollHorizontally="false"
+                                android:hint="Description*"/>
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <Button
+                            style="@style/modifiedEditText"
+                            android:id="@+id/cdate"
+                            android:hint="Enter Close Date*"
+                            android:clickable="true"
+                            android:layout_marginTop="@dimen/signup_text_margin_top"
+                            android:maxLines="1"
+                            android:gravity="left|center_vertical"
+                            android:background="@drawable/bg_calendar"/>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/parent"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                            <EditText
+                                android:id="@+id/appemail"
+                                style="@style/modifiedEditText"
+                                android:hint="Enter Email*"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <Button
+                            android:id="@+id/postad"
+                            style="@style/loginButton"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="SUBMIT"
+                            />
+
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@android:drawable/ic_dialog_dialer"
+                android:onClick="ShowMenu"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    style="@style/loginParent"
+    tools:context="com.mythri.reclancer_app.Freelancer.RDetails">
+
+    <ScrollView style="@style/parent">
+
+        <RelativeLayout style="@style/parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:weightSum="12">
+
+                <LinearLayout
+                    style="@style/parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/login_shape_bk"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/parent"
+                        android:background="@drawable/ic_login_bk"
+                        android:contentDescription="login background" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/headerText"
+                    android:layout_gravity="center"
+                    android:text="Job Details"
+                    />
+
+
+                <android.support.v7.widget.CardView
+                    style="@style/loginCard"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+
+                    android:background="@color/whiteCardColor"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="@dimen/loginCardRadius">
+
+                    <LinearLayout
+                        style="@style/linearParent"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/loginViewsMargin">
+
+                        <TextView
+                            android:id="@+id/title"
+                            style="@style/SearchText"
+                            android:layout_gravity="center"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Email:"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:labelFor="@+id/email" />
+
+                        <TextView
+                            android:id="@+id/email"
+                            style="@style/SearchApplied"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile:"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:labelFor="@+id/mobile" />
+
+                        <TextView
+                            android:id="@+id/mobile"
+                            style="@style/SearchApplied"
+                            android:layout_gravity="center"
+                            android:text="3 Applied" />
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    style="@style/loginCard"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+
+                    android:background="@color/whiteCardColor"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="@dimen/loginCardRadius">
+
+                    <LinearLayout
+                        style="@style/linearParent"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/loginViewsMargin">
+
+                        <TextView
+                            style="@style/SearchText"
+                            android:layout_gravity="center"
+
+                            android:text="Skill Details"
+                            android:background="@drawable/bg_jobdetails"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Prirmary Skills:"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:labelFor="@+id/pskill" />
+
+                        <TextView
+                            android:id="@+id/pskill"
+                            style="@style/SearchApplied"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Experience:"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:labelFor="@+id/exp" />
+
+                        <TextView
+                            android:id="@+id/exp"
+                            style="@style/SearchApplied"
+                            android:layout_gravity="center"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Secondary Skills:"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:labelFor="@+id/sskills" />
+
+                        <TextView
+                            android:id="@+id/sskills"
+                            style="@style/SearchApplied"
+                            android:layout_gravity="center"
+                            />
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    style="@style/loginCard"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+
+                    android:background="@color/whiteCardColor"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="@dimen/loginCardRadius">
+
+                    <LinearLayout
+                        style="@style/linearParent"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/loginViewsMargin">
+
+                        <TextView
+                            style="@style/SearchText"
+                            android:layout_gravity="center"
+
+                            android:text="Project Details"
+                            android:background="@drawable/bg_skillset"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Address:"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:labelFor="@+id/prjadd" />
+
+                        <TextView
+                            android:id="@+id/prjadd"
+                            style="@style/SearchApplied"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Project Period in Months:"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:labelFor="@+id/prjperiod" />
+
+                        <TextView
+                            android:id="@+id/prjperiod"
+                            style="@style/SearchApplied"
+                            android:layout_gravity="center"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Project Start Date:"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:labelFor="@+id/sdate" />
+
+                        <TextView
+                            android:id="@+id/sdate"
+                            style="@style/SearchApplied"
+                            android:layout_gravity="center"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Project End Date:"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:labelFor="@+id/edate" />
+
+                        <TextView
+                            android:id="@+id/edate"
+                            style="@style/SearchApplied"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.v7.widget.CardView
+                    style="@style/loginCard"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+
+                    android:background="@color/whiteCardColor"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="@dimen/loginCardRadius">
+
+                    <LinearLayout
+                        style="@style/linearParent"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/loginViewsMargin">
+
+                        <TextView
+                            style="@style/SearchText"
+                            android:layout_gravity="center"
+
+                            android:text="Job Description"
+                            android:background="@drawable/bg_jobdetails"/>
+
+
+                        <TextView
+                            android:id="@+id/desc"
+                            style="@style/SearchApplied"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:gravity="top|left"
+                            android:overScrollMode="always"
+                            android:lines="25"
+                            android:scrollbarStyle="insideInset"
+                            android:scrollbars="vertical"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            />
+
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@android:drawable/ic_dialog_dialer"
+                android:onClick="ShowMenu"/>-->
+
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="370dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginRight="-10dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel" />-->
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
+

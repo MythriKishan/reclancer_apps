@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    style="@style/loginParent"
+    tools:context="com.mythri.reclancer_app.HomePage">
+    <ScrollView
+        style="@style/parent">
+
+        <RelativeLayout
+            style="@style/parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:weightSum="12">
+
+                <LinearLayout
+                    style="@style/parent"
+                    android:background="@drawable/login_shape_bk"
+                    android:orientation="vertical"
+                    android:layout_weight="3">
+
+                    <ImageView
+                        style="@style/parent"
+                        android:background="@drawable/ic_login_bk"
+                        android:contentDescription="login background" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    style="@style/loginCard"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:layout_marginBottom="@dimen/loginViewsMargin"
+                    android:background="@color/whiteCardColor"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="@dimen/loginCardRadius">
+
+                    <LinearLayout
+                        style="@style/linearParent"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/loginViewsMargin">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/logo"
+                            android:scaleType="fitCenter" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+                    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                    <!--style="@style/loginCard"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginTop="@dimen/loginViewsMargin"-->
+                    <!--android:layout_marginBottom="@dimen/loginViewsMargin"-->
+                    <!--android:background="@color/whiteCardColor"-->
+                    <!--android:elevation="5dp"-->
+                    <!--app:cardCornerRadius="@dimen/loginCardRadius">-->
+
+                    <!--<LinearLayout-->
+                        <!--style="@style/linearParent"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:padding="@dimen/loginViewsMargin">-->
+
+                        <!--<TextView-->
+                            <!--style="@style/initialText"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:text="Freelancer Login" />-->
+                    <!--</LinearLayout>-->
+                <!--</android.support.v7.widget.CardView>-->
+
+                <!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+                    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                    <!--style="@style/loginCard"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginTop="@dimen/loginViewsMargin"-->
+                    <!--android:layout_marginBottom="@dimen/loginViewsMargin"-->
+                    <!--android:background="@color/whiteCardColor"-->
+                    <!--android:elevation="5dp"-->
+                    <!--app:cardCornerRadius="@dimen/loginCardRadius">-->
+
+                    <!--<LinearLayout-->
+                        <!--style="@style/linearParent"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:padding="@dimen/loginViewsMargin">-->
+
+                        <!--<TextView-->
+                            <!--style="@style/initialText"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:text="Freelancer Register" />-->
+                    <!--</LinearLayout>-->
+                <!--</android.support.v7.widget.CardView>-->
+
+                <!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+                    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                    <!--style="@style/loginCard"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginTop="@dimen/loginViewsMargin"-->
+                    <!--android:layout_marginBottom="@dimen/loginViewsMargin"-->
+                    <!--android:background="@color/whiteCardColor"-->
+                    <!--android:elevation="5dp"-->
+                    <!--app:cardCornerRadius="@dimen/loginCardRadius">-->
+
+                    <!--<LinearLayout-->
+                        <!--style="@style/linearParent"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:padding="@dimen/loginViewsMargin">-->
+
+                        <!--<TextView-->
+                            <!--style="@style/initialText"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:text="Recruiter Login" />-->
+                    <!--</LinearLayout>-->
+                <!--</android.support.v7.widget.CardView>-->
+
+                <!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+                    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                    <!--style="@style/loginCard"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginTop="@dimen/loginViewsMargin"-->
+                    <!--android:layout_marginBottom="@dimen/loginViewsMargin"-->
+                    <!--android:background="@color/whiteCardColor"-->
+                    <!--android:elevation="5dp"-->
+                    <!--app:cardCornerRadius="@dimen/loginCardRadius">-->
+
+                    <!--<LinearLayout-->
+                        <!--style="@style/linearParent"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:padding="@dimen/loginViewsMargin">-->
+
+                        <!--<TextView-->
+                            <!--style="@style/initialText"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:text="Recruiter Register" />-->
+                    <!--</LinearLayout>-->
+                <!--</android.support.v7.widget.CardView>-->
+
+                <GridLayout
+                    android:id="@+id/mainGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="8"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="2"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="3">
+
+                    <!-- ROW 1  -->
+                    <!-- COLUMN 1  -->
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/ic_login_bk"
+
+                        app:cardBackgroundColor="@color/colorPrimary"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="5dp"
+                        android:id="@+id/fl">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:background="@android:color/transparent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/login" />
+
+                            <TextView
+                                android:id="@+id/flogin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Freelancer\n Login"
+                                android:textAlignment="center"
+                                android:textColor="@color/whiteTextColor"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!-- COLUMN 2  -->
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@color/BackcolorAccent"
+                        app:cardBackgroundColor="@color/colorPrimary"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:src=" @drawable/register" />
+
+                            <TextView
+                                android:id="@+id/freg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Freelancer\n Register"
+                                android:textAlignment="center"
+                                android:textColor="@color/whiteTextColor"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <!-- ROW 2  -->
+                    <!-- COLUMN 1  -->
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@color/BackcolorAccent"
+                        app:cardBackgroundColor="@color/colorPrimary"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/login" />
+
+                            <TextView
+                                android:id="@+id/rlogin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Recruiter\n Login"
+                                android:textAlignment="center"
+                                android:textColor="@color/whiteTextColor"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!-- COLUMN 2  -->
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@color/BackcolorAccent"
+                        app:cardBackgroundColor="@color/colorPrimary"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/register" />
+
+                            <TextView
+                                android:id="@+id/rreg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Recruiter\n Register"
+                                android:textAlignment="center"
+                                android:textColor="@color/whiteTextColor"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+                </GridLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <!--<TableLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginTop="240dp"-->
+        <!--android:layout_marginRight="20dp">-->
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                <!--style="@style/loginCard"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="@dimen/loginViewsMargin"-->
+                <!--android:layout_marginBottom="@dimen/loginViewsMargin"-->
+                <!--android:background="@color/whiteCardColor"-->
+                <!--android:elevation="5dp"-->
+                <!--app:cardCornerRadius="@dimen/loginCardRadius">-->
+
+                <!--<LinearLayout-->
+                    <!--style="@style/linearParent"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:padding="@dimen/loginViewsMargin">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:background="@drawable/cards"-->
+                        <!--android:scaleType="fitCenter" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/initialText"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:text="Freelancer\n Login" />-->
+                <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                <!--style="@style/loginCard"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="@dimen/loginViewsMargin"-->
+                <!--android:layout_marginBottom="@dimen/loginViewsMargin"-->
+                <!--android:background="@color/whiteCardColor"-->
+                <!--android:elevation="5dp"-->
+                <!--app:cardCornerRadius="@dimen/loginCardRadius">-->
+
+                <!--<LinearLayout-->
+                    <!--style="@style/linearParent"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:padding="@dimen/loginViewsMargin">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:background="@drawable/cards"-->
+                        <!--android:scaleType="fitCenter" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/initialText"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:text="Freelancer\n Register" />-->
+                <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+        <!--</TableRow>-->
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                <!--style="@style/loginCard"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="@dimen/loginViewsMargin"-->
+                <!--android:layout_marginBottom="@dimen/loginViewsMargin"-->
+                <!--android:background="@color/whiteCardColor"-->
+                <!--android:elevation="5dp"-->
+                <!--app:cardCornerRadius="@dimen/loginCardRadius">-->
+
+                <!--<LinearLayout-->
+                    <!--style="@style/linearParent"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:padding="@dimen/loginViewsMargin">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:background="@drawable/cards"-->
+                        <!--android:scaleType="fitCenter" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/initialText"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:text="Recruiter\n Login" />-->
+                <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                <!--style="@style/loginCard"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="@dimen/loginViewsMargin"-->
+                <!--android:layout_marginBottom="@dimen/loginViewsMargin"-->
+                <!--android:background="@color/whiteCardColor"-->
+                <!--android:elevation="5dp"-->
+                <!--app:cardCornerRadius="@dimen/loginCardRadius">-->
+
+                <!--<LinearLayout-->
+                    <!--style="@style/linearParent"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:padding="@dimen/loginViewsMargin">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:background="@drawable/cards"-->
+                        <!--android:scaleType="fitCenter" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/initialText"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:text="Recruiter\n Register" />-->
+                <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+        <!--</TableRow>-->
+
+
+    <!--</TableLayout>-->
+
+</RelativeLayout>
+
+

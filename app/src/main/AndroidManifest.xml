@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mythri.reclancer_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".Globals">
+
+        <activity android:name="com.mythri.reclancer_app.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomePage"></activity>
+        <activity android:name=".Freelancer.FLogin"></activity>
+        <activity android:name=".Freelancer.FReg"></activity>
+        <activity android:name=".Freelancer.F_Reg"></activity>
+        <activity android:name=".Freelancer.FHome"></activity>
+        <activity android:name=".Freelancer.RResult"></activity>
+        <activity android:name=".Freelancer.FPostAd"></activity>
+        <activity android:name=".Freelancer.Edit_fprofile"></activity>
+        <activity android:name=".Freelancer.ManageFJobs"></activity>
+        <activity android:name=".Freelancer.RSearch"></activity>
+        <activity android:name=".Recruiter.RReg"></activity>
+        <activity android:name=".Recruiter.RLogin"></activity>
+        <activity android:name=".Recruiter.RHome"></activity>
+        <activity android:name=".Recruiter.Edit_rprofile"></activity>
+        <activity android:name=".Recruiter.RPostAd"></activity>
+       <activity android:name=".Recruiter.FResult"></activity>
+        <activity android:name=".Freelancer.F_PSettigs"></activity>
+        <activity android:name=".Freelancer.EditF_ads"></activity>
+        <activity android:name=".Freelancer.F_Adstatus"></activity>
+        <activity android:name=".Recruiter.ManageRJobs"></activity>
+        <activity android:name=".Recruiter.EditR_ads"></activity>
+        <activity android:name=".Recruiter.R_Adstatus"></activity>
+        <activity android:name=".Recruiter.R_PSettings"></activity>
+        <activity android:name=".Recruiter.R_Reset_Pass"></activity>
+        <activity android:name=".Freelancer.F_Reset_Pass"></activity>
+        <activity android:name=".Freelancer.RDetails"></activity>
+        <activity android:name=".Recruiter.FDetails"></activity>
+        <activity android:name=".Recruiter.FSearch"></activity>
+        <activity android:name=".Freelancer.FOTP"></activity>
+        <activity android:name=".PaymentActivity"></activity>
+        <activity android:name=".Freelancer.Fsuccess"></activity>
+        <activity android:name=".Freelancer.Ffailure"></activity>
+        <activity android:name=".Recruiter.ViewRdetails"></activity>
+        <activity android:name=".Recruiter.ROTP"></activity>
+        <activity android:name=".Freelancer.F_MLogin"></activity>
+        <activity android:name=".Recruiter.R_MLogin"></activity>
+        <activity android:name=".Freelancer.FOTP_Login"></activity>
+        <activity android:name=".Recruiter.ROTP_Login"></activity>
+        <activity android:name=".Freelancer.F_Dash"></activity>
+        <activity android:name=".Recruiter.R_Dash"></activity>
+        <activity android:name=".Freelancer.FRDash"></activity>
+        <activity android:name=".Recruiter.RFDash"></activity>
+        <activity android:name=".Freelancer.int_Rad_details"></activity>
+        <activity android:name=".Freelancer.int_Recad_details"></activity>
+        <activity android:name=".Recruiter.int_Fad_details"></activity>
+        <activity android:name=".Recruiter.int_F_ad_details"></activity>
+        <!-- Add your API key here -->
+
+
+        <meta-data android:name="com.razorpay.ApiKey" android:value="rzp_live_ILgsfZCZoFIKMb"/>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView style="@style/parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        style="@style/loginParent"
+        android:background="@drawable/bg_linear"
+        tools:context="com.mythri.reclancer_app.Freelancer.ManageFJobs">
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card"
+            style="@style/loginCard"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/loginViewsMargin"
+            android:background="@color/whiteCardColor"
+            android:elevation="5dp"
+            app:cardCornerRadius="@dimen/loginCardRadius">
+
+            <LinearLayout
+                style="@style/linearParent"
+                android:layout_gravity="center"
+                android:padding="@dimen/loginViewsMargin">
+
+                <TextView
+                    android:id="@+id/ad_id"
+                    style="@style/SearchApplied"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/SearchApplied"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/skills"
+                    style="@style/SearchApplied"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/exp"
+                    style="@style/SearchApplied"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/state"
+                    style="@style/SearchApplied"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/city"
+                    style="@style/SearchApplied"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_applieddetails"
+                        android:text="Details"
+                        android:textSize="10sp"
+                        android:onClick="details"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
